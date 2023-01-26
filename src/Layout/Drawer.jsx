@@ -1,19 +1,23 @@
-import React from 'react'
+import { Accordion } from '@mantine/core'
+import React, { useContext } from 'react'
+import { Link } from 'react-router-dom'
+import { NavContext } from '../Context/NavContext'
 
 function Drawer() {
+  const { Toggle} = useContext(NavContext)
   return (
-    <div className="hidden navbar-menu fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50">
-    <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80" />
+    <div className=" fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50">
+    <div className=" fixed inset-0 bg-gray-800 opacity-80" />
     <nav className="relative z-10 px-9 py-8 bg-white h-full">
       <div className="flex flex-wrap justify-between h-full">
         <div className="w-full">
           <div className="flex items-center justify-between -m-2">
             <div className="w-auto p-2">
               <a className="inline-block" href="#">
-                <img src="gradia-assets/logos/gradia-name-black.svg" alt="" />
+                <img src="https://static.shuffle.dev/uploads/files/de/de01ec5bf4d9796145533f1f5924c22fe5aedfae/LOGO-MICROTIC-03-04-2022.png" alt="" />
               </a>
             </div>
-            <div className="w-auto p-2">
+            <div onClick={()=> Toggle()} className="w-auto p-2">
               <a className="navbar-burger" href="#">
                 <svg
                   width={24}
@@ -36,56 +40,73 @@ function Drawer() {
         </div>
         <div className="flex flex-col justify-center py-8 w-full">
           <ul>
-            <li className="mb-12">
+         <li className="mb-12">
+         <Accordion defaultValue="services">
+      <Accordion.Item value="Services">
+        <Accordion.Control><p className="font-heading font-medium text-lg text-gray-900 hover:text-gray-700">Services</p></Accordion.Control>
+        <Accordion.Panel>
+          <ul className='list-none'>
+            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>creation de site web</li>
+            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>Creation de E-commerce</li>
+            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>Application Mobile</li>
+            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>Publicite en ligne</li>
+            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>Identite Visuelle</li>
+            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>Vidéo</li>
+          </ul>
+        </Accordion.Panel>
+      </Accordion.Item>
+
+    
+    </Accordion>
+         </li>
+         <li className="mb-12">
+         <Link to="/references" >
               <a
                 className="font-heading font-medium text-lg text-gray-900 hover:text-gray-700"
                 href="#"
               >
-                Features
+                References
               </a>
-            </li>
-            <li className="mb-12">
+            </Link>
+         </li>
+            
+         <li className="mb-12">
+         <Link to="/realisation" >
               <a
                 className="font-heading font-medium text-lg text-gray-900 hover:text-gray-700"
                 href="#"
               >
-                Solutions
+                Realisation
               </a>
-            </li>
-            <li className="mb-12">
+            </Link>
+         </li>
+         <li className="mb-12">
+         <Link to="/about" >
               <a
                 className="font-heading font-medium text-lg text-gray-900 hover:text-gray-700"
                 href="#"
               >
-                Resources
+                A propos
               </a>
-            </li>
-            <li>
-              <a
-                className="font-heading font-medium text-lg text-gray-900 hover:text-gray-700"
-                href="#"
-              >
-                Pricing
-              </a>
-            </li>
+            </Link>
+         </li>
           </ul>
         </div>
         <div className="flex flex-col justify-end w-full">
           <div className="flex flex-wrap">
-            <div className="w-full">
+            {/* <div className="w-full">
               <button className="p-0.5 font-heading block w-full text-lg text-gray-900 font-medium rounded-10">
                 <div className="py-2 px-5 rounded-10">
                   <p>Login</p>
                 </div>
               </button>
-            </div>
+            </div> */}
             <div className="w-full">
-              <button className="group relative p-0.5 font-heading block w-full text-lg text-gray-900 font-medium bg-gradient-cyan overflow-hidden rounded-10">
-                <div className="absolute top-0 left-0 transform -translate-y-full group-hover:-translate-y-0 h-full w-full bg-gradient-cyan transition ease-in-out duration-500" />
-                <div className="py-2 px-5 bg-white rounded-lg">
-                  <p className="relative z-10">Start Free Trial</p>
-                </div>
-              </button>
+            <Link to="/askPrice" className="w-auto ">
+          <button className="font-heading block py-3.5 px-5 uppercase text-xs tracking-px text-white font-bold bg-[#FEC73C]  hover:bg-yellow-700 transition ease-in rounded-10">
+            Demandez un devis gratuit
+          </button>
+        </Link>
             </div>
           </div>
         </div>

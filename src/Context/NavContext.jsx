@@ -1,15 +1,17 @@
-import { createContext } from "react";
+import React, {createContext,useState } from 'react'
 
-const NavContext = createContext()
+export const NavContext = createContext()
 
-
-
-import React from 'react'
-
-function NavContext() {
+ function NavProvider({children}) {
+    const [open,setOpen] = useState(true)
+   const Toggle = () => { 
+    setOpen(!open)
+    }
   return (
-    <NavContext  >NavContext</NavContext>
+    <NavContext.Provider value={{open,Toggle}}>
+        {children}
+    </NavContext.Provider>
   )
 }
 
-export default NavContext
+export default NavProvider
