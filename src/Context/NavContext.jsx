@@ -3,7 +3,7 @@ import React, {createContext,useState } from 'react'
 export const NavContext = createContext()
 
  function NavProvider({children}) {
-    const [open,setOpen] = useState(true)
+    const [open,setOpen] = useState(false)
    const Toggle = () => { 
     setOpen(!open)
     }
