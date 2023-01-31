@@ -8,122 +8,36 @@ import NavBar from '../Layout/NavBar'
 function AskPrice() {
   const { open} = useContext(NavContext)
   return (
-    <div className='font-["Poppins"] min-h-screen bg-white flex flex-col'>
+    <div className='font-["Poppins"] min-h-screen bg-white  flex flex-col'>
       <NavBar /> 
       { open && <Drawer /> }
     {/* Banner */}
+    <h1 className='text-center text-[#233653]  text-3xl font-bold mt-4' >Demander un devis</h1>
   
-    <section className="pt-20 pb-32 bg-black overflow-hidden">
-  <div className="container mx-auto px-4">
-    <img
-      className="mx-auto mb-28"
-      src="gradia-assets/logos/gradia-name-white.svg"
-      alt=""
-    />
-    <div className="flex flex-wrap items-center -m-6">
-      <div className="w-full md:w-1/2 p-6">
-        <div className="bg-gradient-cyan2 p-1 mx-auto max-w-max overflow-hidden rounded-full">
-          <img
-            className="object-cover rounded-full"
-            src="https://shuffle.dev/gradia-assets/images/sign-up/woman.jpeg"
-            alt=""
-          />
-        </div>
-      </div>
-      <div className="w-full md:w-1/2 p-6">
-        <div className="md:max-w-md">
-          <h2 className="mb-3 font-heading font-bold text-white text-6xl sm:text-5xl">
-            Evaluation de votre projet
-          </h2>
-          <p className="mb-16 text-lg text-gray-500">
-          Un projet à réaliser ? Vous souhaitez plus d’informations et de renseignements sur votre futur projet ? N’hésitez pas à prendre contact, nous aimons les nouveaux défis !
-          </p>
-          <div className="flex flex-wrap -m-2 mb-6">
-            <div className="w-full p-2">
-              <p className="mb-2.5 font-medium text-base text-white">
-               Nom de la Societé
-              </p>
-              <div className="p-px bg-gradient-cyan focus-within:ring-4 focus-within:ring-indigo-500 rounded-lg">
-                <input
-                  className="w-full px-6 py-4 placeholder-gray-500 text-base text-gray-500 bg-black outline-none rounded-lg"
-                  type="text"
-                  placeholder="ResidenceIt"
-                  name="name"
-                />
-              </div>
-            </div>
-         
-            <div className="w-full p-2">
-              <p className="mb-2.5 font-medium text-base text-white">
-                Addresse Mail
-              </p>
-              <div className="p-px bg-gradient-cyan focus-within:ring-4 focus-within:ring-indigo-500 rounded-lg">
-                <input
-                  className="w-full px-6 py-4 placeholder-gray-500 text-base text-gray-500 bg-black outline-none rounded-lg"
-                  type="text"
-                  placeholder="yves.lieon@gmail.com"
-                  name="email"
-                />
-              </div>
-            </div>
-            <div className="w-full p-2">
-              <p className="mb-2.5 font-medium text-base text-white">
-               Numero de telephone
-              </p>
-              <div className="p-px bg-gradient-cyan focus-within:ring-4 focus-within:ring-indigo-500 rounded-lg">
-                <input
-                  className="w-full px-6 py-4 placeholder-gray-500 text-base text-gray-500 bg-black outline-none rounded-lg"
-                  type="text"
-                  placeholder="(+225) 0140117596"
-                  name="name"
-                />
-              </div>
-            </div>
-            <div className="w-full p-2">
-              <p className="mb-2.5 font-medium text-base text-white">
-               Service
-              </p>
-              <div className="p-px bg-gradient-cyan focus-within:ring-4 focus-within:ring-indigo-500 rounded-lg">
-                <input
-                  className="w-full px-6 py-4 placeholder-gray-500 text-base text-gray-500 bg-black outline-none rounded-lg"
-                  type="text"
-                  placeholder="Web Design"
-                  name="name"
-                />
-              </div>
-            </div>
-            <div className="w-full p-2">
-              <p className="mb-2.5 font-medium text-base text-white">
-                Descrption du projet
-              </p>
-              <div className="p-px bg-gradient-cyan focus-within:ring-4 focus-within:ring-indigo-500 rounded-lg">
-                <input
-                  className="w-full px-6 py-4 placeholder-gray-500 text-base text-gray-500 bg-black outline-none rounded-lg"
-                  type="text"
-                  placeholder="Mon projet consistera ...."
-                  name="password"
-                />
-              </div>
-            </div>
-          </div>
-          
-          <div className="group relative md:max-w-max mb-5">
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-blue opacity-0 group-hover:opacity-50 rounded-full transition ease-out duration-300" />
-            <button className="p-1 w-full font-heading font-semibold text-xs text-white uppercase tracking-px overflow-hidden rounded-full">
-              <div className="relative py-5 px-14 bg-gradient-blue overflow-hidden rounded-full">
-                <div className="absolute top-0 left-0 transform -translate-y-full group-hover:-translate-y-0 h-full w-full bg-white transition ease-in-out duration-500" />
-                <p className="relative z-10 group-hover:text-gray-900">
-                    envoyer
-                </p>
-              </div>
-            </button>
-          </div>
-       
-        </div>
-      </div>
+    <div className='md:h-[40rem] md:w-[40rem] h-[40rem] w-[24rem] gap-y-5 flex-col p-5  bg-white drop-shadow-lg rounded-lg self-center mt-4 flex border-2  ' >
+    <h1 className=' text-[#233653]  text-lg font-bold mt-4' >Qui etes vous ?</h1>
+{/* inPut */}
+<div className='w-full min-h-20  flex-col sm:flex-row  gap-4 flex items-center px-1 sm:px-4'>
+  <input className='h-12 bg-gray-100 border-2 p-2  w-full  flex-1' placeholder='prenom'/>
+  <input className='h-12 bg-gray-100 border-2 p-2  w-full flex-1 ' placeholder='nom de famille'/>
+</div>
+{/* Email */}
+<input className='h-12 bg-gray-100 border-2 p-2 w-full ' placeholder='Email professionel'/>
+<h1 className=' text-[#233653]  text-lg font-bold ' >Decrivez votre projet</h1>
+{/* Select */}
+<select className='h-12 bg-gray-100 border-2 p-2 w-full'>
+  <option>Site web</option>
+  <option>Site Ecommerce</option>
+  <option>Application Mobile</option>
+</select>
+{/* description */}
+<textarea  className='flex-1 bg-gray-100 border-2 p-2' placeholder='entrez votre description ici  ' ></textarea>
+
+{/* Boutton */}
+<button className="font-heading block py-3.5 px-5  self-end uppercase text-xs tracking-px text-white font-bold bg-[#FEC73C]  hover:bg-yellow-700 transition ease-in rounded-10">
+           Valider la Demande 
+          </button>
     </div>
-  </div>
-</section>
 {/* Footer */}
 <Footer/>
     </div>

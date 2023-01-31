@@ -1,4 +1,6 @@
+import { Menu } from '@mantine/core'
 import React, { useContext } from 'react'
+import { IoMdArrowDropdown } from 'react-icons/io'
 import { Link } from 'react-router-dom'
 import { NavContext } from '../Context/NavContext'
 
@@ -26,7 +28,43 @@ function HomeNavBar() {
             <a href="#">Accueil</a>
           </Link>
           <li className="font-heading mr-9 text-white hover:text-gray-200 text-lg">
-            <a href="#">Services</a>
+          <Menu shadow="md" width={200}>
+    <Menu.Target>
+      <div className='items-center cursor-pointer flex flex-row '>
+      <p>Services</p>
+          <IoMdArrowDropdown size={20} color="white" />
+      </div>
+    </Menu.Target>
+
+    <Menu.Dropdown>
+      <Menu.Item >
+        <Link to="/service/web">
+        Creation de Site Web </Link></Menu.Item>
+      <Menu.Item>
+      <Link to="/service/ecommerce">
+      Creation de E-commerce </Link>
+        </Menu.Item>
+      <Menu.Item >
+      <Link to="/service/app">
+      Application Mobile </Link>
+        </Menu.Item>
+     
+
+
+      <Menu.Item >
+      <Link to="/service/ad">
+      Publicite en ligne</Link>
+        </Menu.Item>
+      <Menu.Item >
+      <Link to="/service/identity">
+      Identite Visuelle</Link>
+        </Menu.Item>
+      <Menu.Item >
+      <Link to="/service/identity">
+      Vidéo</Link>
+        </Menu.Item>
+    </Menu.Dropdown>
+  </Menu>
           </li>
           <Link to="/reference" className="font-heading mr-9 text-white hover:text-gray-200 text-lg">
             <a href="#">References</a>

@@ -7,6 +7,12 @@ import About from './Screens/About';
 import References from './Screens/References';
 import Realisation from './Screens/Realisation';
 import NavProvider from './Context/NavContext';
+import WebCreation from './Screens/Service/WebCreation';
+import Advertising from './Screens/Service/Advertising';
+import Video from './Screens/Service/Video';
+import Ecommerce from './Screens/Service/Ecommerce';
+import AppMobile from './Screens/Service/AppMobile';
+import Identity from './Screens/Service/Identity';
 
 function App() {
   return (
@@ -20,6 +26,12 @@ function App() {
           <Route path='/about' element={<About/>} />
           <Route path='/reference' element={<References/>} />
           <Route path='/realisation' element={<Realisation/>} />
+          <Route path='/service/web' element={<WebCreation/>} />
+          <Route path='/service/ecommerce' element={<Ecommerce/>} />
+          <Route path='/service/ad' element={<Advertising/>} />
+          <Route path='/service/video' element={<Video/>} />
+          <Route path='/service/app' element={<AppMobile/>} />
+          <Route path='/service/identity' element={<Identity/>} />
         </Routes>
       </Router>
       </NavProvider>

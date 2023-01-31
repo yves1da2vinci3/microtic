@@ -1,13 +1,29 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Menu, Button, Text } from '@mantine/core';
 import {IoMdArrowDropdown} from 'react-icons/io'
 import { NavContext } from '../Context/NavContext';
 function NavBar() {
+  const [Scroll,setScroll] = useState(false)
   const { Toggle} = useContext(NavContext)
+ const NavBarRef = useRef(null)
+
+ const handleScroll = () => {
+  setScroll(window.scrollY >  120);
+  console.log("sss",window.scrollY >  120)
+  console.log(
+    "mercon hein!!"
+  )
+}
+ useEffect(() => {
+  window.addEventListener('scroll', handleScroll);
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
   return (
-    <div className="flex h-20   shadow-xl items-center justify-between px-8 py-5">
-    <div className="w-auto">
+    <div ref={NavBarRef} className={`flex h-20  ${Scroll ? "fixed  w-full z-50"  : ""  }  bg-white   shadow-xl items-center justify-between px-8 py-5`}>
+    <div className="w-auto"> 
       <div className="flex flex-wrap items-center">
         <div className="w-auto mr-14">
           <Link to="/" >
@@ -35,15 +51,32 @@ function NavBar() {
     </Menu.Target>
 
     <Menu.Dropdown>
-      <Menu.Item >Creation de Site Web</Menu.Item>
-      <Menu.Item>Creation de E-commerce</Menu.Item>
-      <Menu.Item >Application Mobile</Menu.Item>
+      <Menu.Item >
+        <Link to="/service/web">
+        Creation de Site Web </Link></Menu.Item>
+      <Menu.Item>
+      <Link to="/service/ecommerce">
+      Creation de E-commerce </Link>
+        </Menu.Item>
+      <Menu.Item >
+      <Link to="/service/app">
+      Application Mobile </Link>
+        </Menu.Item>
      
 
 
-      <Menu.Item >Publicite en ligne</Menu.Item>
-      <Menu.Item >Identite Visuelle</Menu.Item>
-      <Menu.Item >Vidéo</Menu.Item>
+      <Menu.Item >
+      <Link to="/service/ad">
+      Publicite en ligne</Link>
+        </Menu.Item>
+      <Menu.Item >
+      <Link to="/service/identity">
+      Identite Visuelle</Link>
+        </Menu.Item>
+      <Menu.Item >
+      <Link to="/service/identity">
+      Vidéo</Link>
+        </Menu.Item>
     </Menu.Dropdown>
   </Menu>
         </li>

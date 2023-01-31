@@ -46,12 +46,37 @@ function Drawer() {
         <Accordion.Control><p className="font-heading font-medium text-lg text-gray-900 hover:text-gray-700">Services</p></Accordion.Control>
         <Accordion.Panel>
           <ul className='list-none'>
-            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>creation de site web</li>
-            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>Creation de E-commerce</li>
-            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>Application Mobile</li>
-            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>Publicite en ligne</li>
-            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>Identite Visuelle</li>
-            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>Vidéo</li>
+            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>
+              <Link to="/service/web">
+              creation de site web
+
+              </Link>
+              </li>
+            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>
+              <Link to="/service/ecommerce">
+              Creation de E-commerce
+              </Link>
+              </li>
+            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>
+            <Link to="/service/app">
+              Application Mobile
+              </Link>
+              </li>
+            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>
+            <Link to="/service/ad">
+              Publicite en ligne
+              </Link>
+              </li>
+            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>
+            <Link to="/service/identity">
+              Identite Visuelle
+              </Link>
+              </li>
+            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>
+            <Link to="/service/video">
+              Vidéo
+              </Link>
+              </li>
           </ul>
         </Accordion.Panel>
       </Accordion.Item>

@@ -42,7 +42,9 @@ import { Carousel } from '@mantine/carousel';
 import HomeNavBar from '../Layout/HomeNavBar'
 import { NavContext } from '../Context/NavContext'
 import Drawer from '../Layout/Drawer'
+import useMediaQuery from '../Hooks/UseMediaQuey'
 function HomeScreen() {
+  const matches = useMediaQuery('(max-width: 640px)');
   const { open} = useContext(NavContext)
   return (
     <div  className='min-h-screen  font-["Poppins"]  bg-white overflow-hidden flex flex-col' >
@@ -232,11 +234,11 @@ function HomeScreen() {
   <Carousel
       withIndicators
       height={330}
-      slideSize="45%"
+      slideSize={ matches ? "100%" : "45%"}
       slideGap="md"
       loop
       align="start"
-      slidesToScroll={2}
+      slidesToScroll={ matches ? 1 : 2}
     >
       <Carousel.Slide>
         <div className='h-[30rem]  w-full'>
@@ -307,7 +309,7 @@ function HomeScreen() {
 </div>
 </div>
 {/* About */}
-<div className='min-h-[90vh] mt-12 md:mt-0 flex flex-wrap  md:grid md:grid-cols-2' >
+<div className='min-h-[90vh] mt-12 sm:mt-0 flex flex-wrap  sm:grid sm:grid-cols-2' >
 <div class="w-full  flex items-center px-4">
           <div class="relative mx-auto md:mr-0 max-w-max">
             <img class="absolute z-10 -left-14 -top-12 w-28 md:w-auto" src="https://shuffle.dev/flex-ui-assets/elements/circle3-yellow.svg" alt=""/>
