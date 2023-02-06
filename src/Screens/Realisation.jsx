@@ -1,21 +1,21 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
-import CarouselImage1 from '../assets/Images/photo1674.jpeg'
-import CarouselImage2 from '../assets/Images/photo1674634854(2).jpeg'
-import CarouselImage3 from '../assets/Images/photo1674577346(6).jpeg'
-import CarouselImage4 from '../assets/Images/photo1674577346.jpeg'
-import CarouselImage5 from '../assets/Images/photo1674577346jpeg.jpeg'
-import CarouselImage6 from '../assets/Images/photo167463480.jpeg'
-import CarouselImage7 from '../assets/Images/photo1674634805(4).jpeg'
-import CarouselImage8 from '../assets/Images/photo1674634805(5).jpeg'
-import CarouselImage9 from '../assets/Images/photo1674634805(6).jpeg'
-import CarouselImage10 from '../assets/Images/photo1674634805(7).jpeg'
-import CarouselImage11 from '../assets/Images/photo1674634805(8).jpeg'
-import CarouselImage12 from '../assets/Images/photo1674634806.jpeg'
-import CarouselImage13 from '../assets/Images/photo1674634854(2).jpeg'
-import CarouselImage14 from '../assets/Images/photo1674634854(1).jpeg'
-import CarouselImage15 from '../assets/Images/photo1674634854 .jpeg'
+import CarouselImage1 from '../assets/Images/Realisation/photo1675642397 (1).jpeg'
+import CarouselImage2 from '../assets/Images/Realisation/photo1675642397 (2).jpeg'
+import CarouselImage3 from '../assets/Images/Realisation/photo1675642397 (3).jpeg'
+import CarouselImage4 from '../assets/Images/Realisation/photo1675642397 (4).jpeg'
+import CarouselImage5 from '../assets/Images/Realisation/photo1675642397 (5).jpeg'
+import CarouselImage6 from '../assets/Images/Realisation/photo1675642397 (6).jpeg'
+import CarouselImage7 from '../assets/Images/Realisation/photo1675642397 (7).jpeg'
+import CarouselImage8 from '../assets/Images/Realisation/photo1675642397.jpeg'
+import CarouselImage9 from '../assets/Images/Realisation/photo1675642568 (1).jpeg'
+import CarouselImage10 from '../assets/Images/Realisation/photo1675642568 (2).jpeg'
+import CarouselImage11 from '../assets/Images/Realisation/photo1675642568 (3).jpeg'
+import CarouselImage12 from '../assets/Images/Realisation/photo1675642568 (4).jpeg'
+import CarouselImage13 from '../assets/Images/Realisation/photo1675642568 (5).jpeg'
+import CarouselImage14 from '../assets/Images/Realisation/photo1675642568 (6).jpeg'
+import CarouselImage15 from '../assets/Images/Realisation/photo1675642568.jpeg'
 import CarouselImage16 from '../assets/Images/photo1674634854 (5).jpeg'
 import CarouselImage17 from '../assets/Images/photo1674634854 (4).jpeg'
 import CarouselImage18 from '../assets/Images/photo1674634854 (3).jpeg'
@@ -44,79 +44,79 @@ function Realisation() {
 <div className='h-[25rem]  relative group   cursor-pointer flex justify-center items-center  w-[25rem]'>
     <div className='bg-black bg-opacity-20 w-[25rem] hidden group-hover:flex  h-[25rem] absolute '></div>
           <img className='h-[25rem] w-full object-fill' src={CarouselImage1}/>
-          <h1 className='text-white text-2xl hidden group-hover:flex font-semibold z-50 absolute'>Conception de tricot</h1>
+          
         </div>
 <div className='h-[25rem]  relative group   cursor-pointer flex justify-center items-center  w-[25rem]'>
     <div className='bg-black bg-opacity-20 w-[25rem] hidden group-hover:flex  h-[25rem] absolute '></div>
           <img className='h-[25rem] w-full object-fill' src={CarouselImage2}/>
-          <h1 className='text-white text-2xl hidden group-hover:flex font-semibold z-50 absolute'>Conception de tricot</h1>
+          
         </div>
 <div className='h-[25rem]  relative group   cursor-pointer flex justify-center items-center  w-[25rem]'>
     <div className='bg-black bg-opacity-20 w-[25rem] hidden group-hover:flex  h-[25rem] absolute '></div>
           <img className='h-[25rem] w-full object-fill' src={CarouselImage3}/>
-          <h1 className='text-white text-2xl hidden group-hover:flex font-semibold z-50 absolute'>Conception de tricot</h1>
+          
         </div>
 <div className='h-[25rem]  relative group   cursor-pointer flex justify-center items-center  w-[25rem]'>
     <div className='bg-black bg-opacity-20 w-[25rem] hidden group-hover:flex  h-[25rem] absolute '></div>
           <img className='h-[25rem] w-full object-fill' src={CarouselImage4}/>
-          <h1 className='text-white text-2xl hidden group-hover:flex font-semibold z-50 absolute'>Conception de tricot</h1>
+          
         </div>
 <div className='h-[25rem]  relative group   cursor-pointer flex justify-center items-center  w-[25rem]'>
     <div className='bg-black bg-opacity-20 w-[25rem] hidden group-hover:flex  h-[25rem] absolute '></div>
           <img className='h-[25rem] w-full object-fill' src={CarouselImage5}/>
-          <h1 className='text-white text-2xl hidden group-hover:flex font-semibold z-50 absolute'>Conception de tricot</h1>
+          
         </div>
 <div className='h-[25rem]  relative group   cursor-pointer flex justify-center items-center  w-[25rem]'>
     <div className='bg-black bg-opacity-20 w-[25rem] hidden group-hover:flex  h-[25rem] absolute '></div>
           <img className='h-[25rem] w-full object-fill' src={CarouselImage6}/>
-          <h1 className='text-white text-2xl hidden group-hover:flex font-semibold z-50 absolute'>Conception de tricot</h1>
+          
         </div>
 <div className='h-[25rem]  relative group   cursor-pointer flex justify-center items-center  w-[25rem]'>
     <div className='bg-black bg-opacity-20 w-[25rem] hidden group-hover:flex  h-[25rem] absolute '></div>
           <img className='h-[25rem] w-full object-fill' src={CarouselImage7}/>
-          <h1 className='text-white text-2xl hidden group-hover:flex font-semibold z-50 absolute'>Conception de tricot</h1>
+          
         </div>
 <div className='h-[25rem]  relative group   cursor-pointer flex justify-center items-center  w-[25rem]'>
     <div className='bg-black bg-opacity-20 w-[25rem] hidden group-hover:flex  h-[25rem] absolute '></div>
           <img className='h-[25rem] w-full object-fill' src={CarouselImage8}/>
-          <h1 className='text-white text-2xl hidden group-hover:flex font-semibold z-50 absolute'>Conception de tricot</h1>
+          
         </div>
 <div className='h-[25rem]  relative group   cursor-pointer flex justify-center items-center  w-[25rem]'>
     <div className='bg-black bg-opacity-20 w-[25rem] hidden group-hover:flex  h-[25rem] absolute '></div>
           <img className='h-[25rem] w-full object-fill' src={CarouselImage9}/>
-          <h1 className='text-white text-2xl hidden group-hover:flex font-semibold z-50 absolute'>Conception de tricot</h1>
+          
         </div>
 <div className='h-[25rem]  relative group   cursor-pointer flex justify-center items-center  w-[25rem]'>
     <div className='bg-black bg-opacity-20 w-[25rem] hidden group-hover:flex  h-[25rem] absolute '></div>
           <img className='h-[25rem] w-full object-fill' src={CarouselImage10}/>
-          <h1 className='text-white text-2xl hidden group-hover:flex font-semibold z-50 absolute'>Conception de tricot</h1>
+          
         </div>
 <div className='h-[25rem]  relative group   cursor-pointer flex justify-center items-center  w-[25rem]'>
     <div className='bg-black bg-opacity-20 w-[25rem] hidden group-hover:flex  h-[25rem] absolute '></div>
           <img className='h-[25rem] w-full object-fill' src={CarouselImage11}/>
-          <h1 className='text-white text-2xl hidden group-hover:flex font-semibold z-50 absolute'>Conception de tricot</h1>
+          
         </div>
 <div className='h-[25rem]  relative group   cursor-pointer flex justify-center items-center  w-[25rem]'>
     <div className='bg-black bg-opacity-20 w-[25rem] hidden group-hover:flex  h-[25rem] absolute '></div>
           <img className='h-[25rem] w-full object-fill' src={CarouselImage12}/>
-          <h1 className='text-white text-2xl hidden group-hover:flex font-semibold z-50 absolute'>Conception de tricot</h1>
+          
         </div>
 <div className='h-[25rem]  relative group   cursor-pointer flex justify-center items-center  w-[25rem]'>
     <div className='bg-black bg-opacity-20 w-[25rem] hidden group-hover:flex  h-[25rem] absolute '></div>
           <img className='h-[25rem] w-full object-fill' src={CarouselImage13}/>
-          <h1 className='text-white text-2xl hidden group-hover:flex font-semibold z-50 absolute'>Conception de tricot</h1>
+          
         </div>
 <div className='h-[25rem]  relative group   cursor-pointer flex justify-center items-center  w-[25rem]'>
     <div className='bg-black bg-opacity-20 w-[25rem] hidden group-hover:flex  h-[25rem] absolute '></div>
           <img className='h-[25rem] w-full object-fill' src={CarouselImage14}/>
-          <h1 className='text-white text-2xl hidden group-hover:flex font-semibold z-50 absolute'>Conception de tricot</h1>
+          
         </div>
 <div className='h-[25rem]  relative group   cursor-pointer flex justify-center items-center  w-[25rem]'>
     <div className='bg-black bg-opacity-20 w-[25rem] hidden group-hover:flex  h-[25rem] absolute '></div>
           <img className='h-[25rem] w-full object-fill' src={CarouselImage15}/>
-          <h1 className='text-white text-2xl hidden group-hover:flex font-semibold z-50 absolute'>Conception de tricot</h1>
+          
         </div>
-<div className='h-[25rem]  relative group   cursor-pointer flex justify-center items-center  w-[25rem]'>
+{/* <div className='h-[25rem]  relative group   cursor-pointer flex justify-center items-center  w-[25rem]'>
     <div className='bg-black bg-opacity-20 w-[25rem] hidden group-hover:flex  h-[25rem] absolute '></div>
           <img className='h-[25rem] w-full object-fill' src={CarouselImage16}/>
           <h1 className='text-white text-2xl hidden group-hover:flex font-semibold z-50 absolute'>Conception de tricot</h1>
@@ -165,7 +165,7 @@ function Realisation() {
     <div className='bg-black bg-opacity-20 w-[25rem] hidden group-hover:flex  h-[25rem] absolute '></div>
           <img className='h-[25rem] w-full object-fill' src={CarouselImage25}/>
           <h1 className='text-white text-2xl hidden group-hover:flex font-semibold z-50 absolute'>Conception de tricot</h1>
-        </div>
+        </div> */}
 </div>
 
 <Footer />
