@@ -56,7 +56,7 @@ function HomeScreen() {
  <section className=" text-black background-animate flex flex-col overflow-hidden">
    <HomeNavBar/>
    { open && <Drawer /> }
-  <div className='h-[87vh] p-3  flex flex-col items-center   sm:grid sm:grid-cols-2  '>
+  <div className='min-h-[87vh] p-3  flex flex-col items-center   sm:grid sm:grid-cols-2  '>
     <div className='  p-6 flex gap-y-12 flex-col order-2 md:order-1 items-start justify-center ' >
       <h1 className='text-5xl text-[#233653] font-bold'>Faites décoller votre business</h1>
       <h1 className=' text-[#7B8697] text-sm font-semibold '>Plus de 12 ans au service du développement de votre activité</h1>
