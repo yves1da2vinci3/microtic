@@ -58,15 +58,15 @@ function HomeScreen() {
    { open && <Drawer /> }
   <div className='min-h-[87vh] p-3  flex flex-col items-center   sm:grid sm:grid-cols-2  '>
     <div className='  p-6 flex gap-y-12 flex-col order-2 md:order-1 items-start justify-center ' >
-      <h1 className='text-5xl text-[#233653] font-bold'>Faites décoller votre business</h1>
-      <h1 className=' text-[#7B8697] text-sm font-semibold '>Plus de 12 ans au service du développement de votre activité</h1>
+      <h1 className=' text-3xl text-center md:text-left  md:text-5xl text-[#233653] font-bold'>Nous améliorons votre image.</h1>
+      <h1 className=' text-[#7B8697] text-sm font-semibold '>Notre mission est promouvoir limage de votre entreprise.</h1>
       <div className='flex items-center justify-center flex-col sm:flex-row' >
 
       <button className="font-heading block py-3.5 px-5 bg-yellow-500 uppercase text-xs tracking-px text-white font-bold   hover:bg-opacity-10 transition ease-in rounded-10">
               Commencer Le projet
             </button>
 
-  <h1 className='capitalize font-semibold text-lg mt-2 ml-0 sm:ml-5' >N De Tel : <span className='text-[#EAB308] font-bold ml-3'>(+225) 522 522 057</span> </h1>
+  <h1 className='capitalize font-semibold text-[1rem] md:text-lg mt-2 ml-0 sm:ml-5' >N De Tel : <span className='text-[#EAB308] font-bold ml-3'> 01 53 62 56 18/27 34 75 60 55</span> </h1>
       </div>
 
     </div>
@@ -95,7 +95,7 @@ function HomeScreen() {
     <div className='flex p-2  flex-wrap justify-center ' >
         
        
-    <div className='h-64 relative  overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    <Link to="/service/" className='h-64 relative  overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
        {/* loobme */}
        <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
         <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
@@ -108,8 +108,8 @@ function HomeScreen() {
         </div>
         <p className='text-xl capitalize font-bold ml-3 mt-1 text-black group-hover:text-white'>vidéo</p>
         <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>La vidéo d'entreprise est un moyen de communication  a la fois ludique , innovant et interactif.</p>
-    </div>
-    <div className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    </Link>
+    <Link to="/service/web" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
     <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
         <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
           <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
@@ -121,8 +121,8 @@ function HomeScreen() {
         </div>
         <p className='text-xl capitalize font-bold ml-3 mt-1 text-black group-hover:text-white'>Création de site web</p>
         <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>Vous cherchez une agence de creation  graphique pour votre communication visuelle</p>
-    </div>
-    <div className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    </Link>
+    <Link to="/service/identity" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
     <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
         <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
           <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
@@ -133,8 +133,8 @@ function HomeScreen() {
         </div>
         <p className='text-xl capitalize font-bold ml-3 mt-1 text-black group-hover:text-white'>Identité visuelle</p>
         <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>La vidéo d'entreprise est un moyen de communication  a la fois ludique , innovant et interactif.</p>
-    </div>
-    <div className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    </Link>
+    <Link to="/service/ecommerce" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
     <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
         <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
           <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
@@ -147,8 +147,8 @@ function HomeScreen() {
         </div>
         <p className='text-xl capitalize font-bold ml-3 mt-1 text-black group-hover:text-white'>Creation de sites E-commerce</p>
         <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>Offrir à vos clients une meilleure experience en ligne grace a votre solution e-commerce </p>
-    </div>
-    <div className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    </Link>
+    <Link to="/service/app" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
     <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
         <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
           <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
@@ -160,8 +160,8 @@ function HomeScreen() {
         </div>
         <p className='text-xl capitalize font-bold ml-3 mt-1 text-black group-hover:text-white'>Application Mobile</p>
         <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>La vidéo d'entreprise est un moyen de communication  a la fois ludique , innovant et interactif.</p>
-    </div>
-    <div className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    </Link>
+    <Link to="/service/ad" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
     <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
         <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
           <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
@@ -172,8 +172,8 @@ function HomeScreen() {
         </div>
         <p className='text-xl capitalize font-bold ml-3 mt-1 text-black  group-hover:text-white'>Publicité en ligne</p>
         <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>La vidéo d'entreprise est un moyen de communication  a la fois ludique , innovant et interactif.</p>
-    </div>
-    <div className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    </Link>
+    <Link to="/service/print" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
     <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
         <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
           <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
@@ -185,8 +185,8 @@ function HomeScreen() {
         </div>
         <p className='text-xl capitalize font-bold ml-3 mt-1 text-black  group-hover:text-white'> Imprimerie</p>
         <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>La vidéo d'entreprise est un moyen de communication  a la fois ludique , innovant et interactif.</p>
-    </div>
-    <div className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    </Link>
+    <Link to="/service/light" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
     <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
         <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
           <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
@@ -198,8 +198,8 @@ function HomeScreen() {
         </div>
         <p className='text-xl capitalize font-bold ml-3 mt-1 text-black  group-hover:text-white'>Enseignes Lumineuse </p>
         <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>La vidéo d'entreprise est un moyen de communication  a la fois ludique , innovant et interactif.</p>
-    </div>
-    <div className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    </Link>
+    <Link to="/service/wear" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
     <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
         <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
           <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
@@ -211,8 +211,8 @@ function HomeScreen() {
         </div>
         <p className='text-xl capitalize font-bold ml-3 mt-1 text-black  group-hover:text-white'>revêtement de façade</p>
         <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>La vidéo d'entreprise est un moyen de communication  a la fois ludique , innovant et interactif.</p>
-    </div>
-    <div className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    </Link>
+    <Link to="/service/building" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
     <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
         <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
           <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
@@ -224,7 +224,7 @@ function HomeScreen() {
         </div>
         <p className='text-xl capitalize font-bold ml-3 mt-1 text-black  group-hover:text-white'>construction métallique</p>
         <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>La vidéo d'entreprise est un moyen de communication  a la fois ludique , innovant et interactif.</p>
-    </div>
+    </Link>
 
 
     </div>

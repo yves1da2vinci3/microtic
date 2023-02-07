@@ -44,11 +44,15 @@ function About() {
 </svg>
           </div>
             <p className='font-semibold z-40'>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
-            since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
-            essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
-            essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+            Nous sommes une équipe de passionnés du web, 
+            pleine de bonnes idées qui trouve son bonheur dans 
+            l’accompagnement de ses clients tout au long de leurs
+             projets web. La créativité et le professionnalisme 
+             sont les fondements sur lesquels on se base pour 
+             livrer des sites internet à la hauteur de vos attentes 
+             et de vos objectifs. MediaZain a su évoluer au cours des 
+             années pour s’adapter au monde passionnant du digital, et garder la même énergie et motivation qu’au départ.
+
             </p>
         </div>
         <div className='bg-[#FF8A73] ml-3 shadow-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 shadow-[#FF8A73] border-2 drop-shadow-md border-[#FF8A73]  cursor-pointer w-12  h-12 rounded-full flex items-center justify-center' >

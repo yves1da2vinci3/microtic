@@ -2,11 +2,12 @@ import { Menu } from '@mantine/core'
 import React, { useContext } from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { IoMdArrowDropdown } from 'react-icons/io'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { NavContext } from '../Context/NavContext'
 
 function HomeNavBar() {
     const {Toggle } = useContext(NavContext)
+    const location = useLocation()
   return (
     <section>
     <div className="flex items-center sm:shadow-none shadow-lg justify-between px-8 py-5">
@@ -25,10 +26,8 @@ function HomeNavBar() {
       </div>
       <div className="w-auto hidden lg:block">
         <ul className="flex items-center mr-10">
-          <Link to ="/" className="font-heading mr-9 text-black hover:text-yellow-500 hover:font-semibold text-lg">
-            <a href="#">Accueil</a>
-          </Link>
-          <li className="font-heading mr-9 text-black hover:text-yellow-500 hover:font-semibold text-lg">
+          
+          <li className={` ${location.pathname.startsWith("/service") ?  "text-yellow-500 font-semibold" : 'text-black'} font-heading mr-9  hover:text-yellow-500 hover:font-semibold text-lg`}>
           <Menu shadow="md" width={200}>
     <Menu.Target>
       <div className='items-center cursor-pointer flex flex-row '>
@@ -64,16 +63,36 @@ function HomeNavBar() {
       <Link to="/service/identity">
       Vidéo</Link>
         </Menu.Item>
+      <Menu.Item >
+      <Link to="/service/print">
+      Impremérie
+      </Link>
+        </Menu.Item>
+      <Menu.Item >
+      <Link to="/service/light">
+      Enseignes Lumineuse
+      </Link>
+        </Menu.Item>
+      <Menu.Item >
+      <Link to="/service/wear">
+      Revêtement De Façade
+      </Link>
+        </Menu.Item>
+      <Menu.Item >
+      <Link to="/service/building">
+      Construction Métallique
+      </Link>
+        </Menu.Item>
     </Menu.Dropdown>
   </Menu>
           </li>
-          <Link to="/reference" className="font-heading mr-9 text-black hover:text-yellow-500 hover:font-semibold text-lg">
-            <a href="#">References</a>
+          <Link to="/reference" className={` ${location.pathname.includes("/reference") ?  "text-yellow-500 font-semibold" : 'text-black'} font-heading mr-9  hover:text-yellow-500 hover:font-semibold text-lg`}>
+            <a href="#">Références</a>
           </Link>
-          <Link to="/realisation" className="font-heading mr-9 text-black hover:text-yellow-500 hover:font-semibold text-lg">
-            <a href="#">Realisation</a>
+          <Link to="/realisation" className={` ${location.pathname.includes("/realisation") ?  "text-yellow-500 font-semibold" : 'text-black'} font-heading mr-9  hover:text-yellow-500 hover:font-semibold text-lg`}>
+            <a href="#">Réalisation</a>
           </Link>
-          <Link to="/about" className="font-heading text-black hover:text-yellow-500 hover:font-semibold text-lg">
+          <Link to="/about" className={` ${location.pathname.includes("/about") ?  "text-yellow-500 font-semibold" : 'text-black'} font-heading mr-9  hover:text-yellow-500 hover:font-semibold text-lg`}>
             <a href="#">A propos</a>
           </Link>
         </ul>

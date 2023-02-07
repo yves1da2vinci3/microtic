@@ -13,6 +13,10 @@ import Video from './Screens/Service/Video';
 import Ecommerce from './Screens/Service/Ecommerce';
 import AppMobile from './Screens/Service/AppMobile';
 import Identity from './Screens/Service/Identity';
+import Print from './Screens/Service/Print';
+import Light from './Screens/Service/Light';
+import Wear from './Screens/Service/Wear';
+import Building from './Screens/Service/Building';
 
 function App() {
   return (
@@ -32,6 +36,10 @@ function App() {
           <Route path='/service/video' element={<Video/>} />
           <Route path='/service/app' element={<AppMobile/>} />
           <Route path='/service/identity' element={<Identity/>} />
+          <Route path='/service/print' element={<Print/>} />
+          <Route path='/service/light' element={<Light/>} />
+          <Route path='/service/wear' element={<Wear/>} />
+          <Route path='/service/building' element={<Building/>} />
         </Routes>
       </Router>
       </NavProvider>

@@ -77,6 +77,26 @@ function Drawer() {
               Vidéo
               </Link>
               </li>
+            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>
+            <Link to="/service/print">
+              Impremérie
+              </Link>
+              </li>
+            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>
+            <Link to="/service/light">
+            Enseignes Lumineuse
+              </Link>
+              </li>
+            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>
+            <Link to="/service/wear">
+               Revêtement De Façade
+              </Link>
+              </li>
+            <li className='font-semibold p-2  cursor-pointer hover:bg-[#F9BE7A] hover:text-white rounded-lg'>
+            <Link to="/service/building">
+             Construction Métallique
+              </Link>
+              </li>
           </ul>
         </Accordion.Panel>
       </Accordion.Item>
