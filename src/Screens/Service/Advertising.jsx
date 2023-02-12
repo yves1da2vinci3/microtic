@@ -173,7 +173,7 @@ C’est la plus grande régie publicitaire au monde. Google Adwords est un moyen
 </div>
 </div>
       </div>
-      <section className="relative pt-28 pb-36 bg-gray-100 overflow-hidden">
+      {/* <section className="relative pt-28 pb-36 bg-gray-100 overflow-hidden">
   <img
     className="absolute top-0 left-1/2 transform -translate-x-1/2"
     src="https://shuffle.dev/gradia-assets/elements/testimonials/radial3.svg"
@@ -256,7 +256,7 @@ C’est la plus grande régie publicitaire au monde. Google Adwords est un moyen
     </Carousel>
     </div>
   </div>
-</section>
+</section> */}
 {/* Client */}
 <Footer />
     </div>

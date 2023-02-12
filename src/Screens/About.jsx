@@ -50,7 +50,7 @@ function About() {
              projets web. La créativité et le professionnalisme 
              sont les fondements sur lesquels on se base pour 
              livrer des sites internet à la hauteur de vos attentes 
-             et de vos objectifs. MediaZain a su évoluer au cours des 
+             et de vos objectifs. Microtic a su évoluer au cours des 
              années pour s’adapter au monde passionnant du digital, et garder la même énergie et motivation qu’au départ.
 
             </p>

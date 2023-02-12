@@ -216,7 +216,7 @@ Conseil et suivi de projet
 </div>
 </div>
       </div>
-      <section className="relative pt-28 pb-36 bg-gray-100 overflow-hidden">
+      {/* <section className="relative pt-28 pb-36 bg-gray-100 overflow-hidden">
   <img
     className="absolute top-0 left-1/2 transform -translate-x-1/2"
     src="https://shuffle.dev/gradia-assets/elements/testimonials/radial3.svg"
@@ -299,7 +299,7 @@ Conseil et suivi de projet
     </Carousel>
     </div>
   </div>
-</section>
+</section> */}
 {/* Client */}
 <Footer />
     </div>

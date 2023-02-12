@@ -28,18 +28,25 @@ import gcb8 from '../assets/Images/SEXIM.jpg'
 import gcb9 from '../assets/Images/oh.jpeg'
 import gcb10 from '../assets/Images/1575009761_logo-gcb.png'
 // Carousel Images
-import CarouselImage1 from '../assets/Images/photo1674.jpeg'
-import CarouselImage2 from '../assets/Images/photo1674634854(2).jpeg'
-import CarouselImage3 from '../assets/Images/photo1674577346(6).jpeg'
-import CarouselImage4 from '../assets/Images/photo1674577346.jpeg'
-import CarouselImage5 from '../assets/Images/photo1674577346jpeg.jpeg'
-import CarouselImage6 from '../assets/Images/photo167463480.jpeg'
-import CarouselImage7 from '../assets/Images/photo1674634805(4).jpeg'
-import CarouselImage8 from '../assets/Images/photo1674634805(5).jpeg'
-import CarouselImage9 from '../assets/Images/photo1674634805(6).jpeg'
-import CarouselImage10 from '../assets/Images/photo1674634805(7).jpeg'
-import CarouselImage11 from '../assets/Images/photo1674634805(8).jpeg'
-import CarouselImage12 from '../assets/Images/photo1674634806.jpeg'
+import CarouselImage1 from '../assets/Images/produit/3D maq.jpg'
+import CarouselImage2 from '../assets/Images/produit/980DD919-390A-4B48-B6CE-3FA48D5DF197.jpg'
+import CarouselImage3 from '../assets/Images/produit/C88713B5-A8DF-43F5-BE52-7CFED95A98CC.jpg'
+import CarouselImage4 from '../assets/Images/produit/carnets de bon de livraison.jpg'
+import CarouselImage5 from '../assets/Images/produit/carte de visite.jpg'
+import CarouselImage6 from '../assets/Images/produit/casqu.jpg'
+import CarouselImage7 from '../assets/Images/produit/conception de maquette 3d.jpg'
+import CarouselImage8 from '../assets/Images/produit/decor.jpg'
+import CarouselImage9 from '../assets/Images/produit/Enseign.jpg'
+import CarouselImage10 from '../assets/Images/produit/enseigne pub.jpg'
+import CarouselImage11 from '../assets/Images/produit/façade alucobond.jpg'
+import CarouselImage12 from '../assets/Images/produit/Polo personnalisé.jpg'
+import CarouselImage13 from '../assets/Images/produit/Rénovation.jpg'
+import CarouselImage14 from '../assets/Images/produit/SanEPIs titre-3-Récupéré.jpg'
+import CarouselImage15 from '../assets/Images/produit/Sans titre-3.jpg'
+import CarouselImage16 from '../assets/Images/produit/securité.jpg'
+import CarouselImage17 from '../assets/Images/produit/stylo perso.jpg'
+import CarouselImage18 from '../assets/Images/produit/Teeshirrt p.jpg'
+import CarouselImage19 from '../assets/Images/produit/toteme publicitaire 3D.jpg'
 import { Link } from 'react-router-dom'
 
 import { Carousel } from '@mantine/carousel';
@@ -47,7 +54,7 @@ import HomeNavBar from '../Layout/HomeNavBar'
 import { NavContext } from '../Context/NavContext'
 import Drawer from '../Layout/Drawer'
 import useMediaQuery from '../Hooks/UseMediaQuey'
-import HomeImg from '../assets/Images/homeBack.webp'
+import HomeImg from '../assets/Images/HomePicture.png'
 function HomeScreen() {
   const matches = useMediaQuery('(max-width: 640px)');
   const { open} = useContext(NavContext)
@@ -66,7 +73,7 @@ function HomeScreen() {
               Commencer Le projet
             </button>
 
-  <h1 className='capitalize font-semibold text-[1rem] md:text-lg mt-2 ml-0 sm:ml-5' >N De Tel : <span className='text-[#EAB308] font-bold ml-3'> 01 53 62 56 18/27 34 75 60 55</span> </h1>
+  <h1 className='capitalize font-semibold text-[0.8rem] md:text-lg mt-2 ml-0 sm:ml-5' >N De Tel : <span className='text-[#EAB308] font-bold ml-3'> 01 53 62 56 18/27 34 75 60 55</span> </h1>
       </div>
 
     </div>
@@ -76,168 +83,15 @@ function HomeScreen() {
     
      </div>
 </section>
-
-
-{/* Nos Services */}
-<div className='min-h-screen  w-full relative flex flex-col ' >
-  <div className='absolute self-center mr-4 h-auto w-full bottom-0' >
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FF8A73" fill-opacity="1" d="M0,32L60,48C120,64,240,96,360,101.3C480,107,600,85,720,101.3C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-  </div>
-    <div className='w-80 m-4' >
-    <div className='bg-[#F9BE7A] w-48 h-12 rounded flex items-center justify-center' >
-<p className='text-[#ad5135] font-bold text-lg mr-2'>Nos services</p>
-</div>
-<p className='text-gray-500 font-semibold mt-5'>Microtic veille a offrir les meilleurs services aux clients ,en repondant a leurs besoins et aussi a leur objectif.</p>
-
-    </div>
-    
-    {/* Cards */}
-    <div className='flex p-2  flex-wrap justify-center ' >
-        
-       
-    <Link to="/service/" className='h-64 relative  overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
-       {/* loobme */}
-       <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
-        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
-          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
-        </div>
-       </div>
-        <div className='w-24  group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
-
-          <img className='h-14 w-14' src={videoEditing} />
-        </div>
-        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black group-hover:text-white'>vidéo</p>
-        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>La vidéo d'entreprise est un moyen de communication  a la fois ludique , innovant et interactif.</p>
-    </Link>
-    <Link to="/service/web" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
-    <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
-        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
-          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
-        </div>
-       </div>
-        <div className='w-24 group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
-        <img className='h-14 w-14' src={webIcon} />
-
-        </div>
-        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black group-hover:text-white'>Création de site web</p>
-        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>Vous cherchez une agence de creation  graphique pour votre communication visuelle</p>
-    </Link>
-    <Link to="/service/identity" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
-    <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
-        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
-          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
-        </div>
-       </div>
-        <div className='w-24 group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
-        <FcCameraIdentification size={40} color="white"  />
-        </div>
-        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black group-hover:text-white'>Identité visuelle</p>
-        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>La vidéo d'entreprise est un moyen de communication  a la fois ludique , innovant et interactif.</p>
-    </Link>
-    <Link to="/service/ecommerce" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
-    <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
-        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
-          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
-        </div>
-       </div>
-        <div className='w-24 group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
-        <img className='h-14 w-14' src={ecommerceIcon} />
-
-
-        </div>
-        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black group-hover:text-white'>Creation de sites E-commerce</p>
-        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>Offrir à vos clients une meilleure experience en ligne grace a votre solution e-commerce </p>
-    </Link>
-    <Link to="/service/app" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
-    <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
-        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
-          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
-        </div>
-       </div>
-        <div className='w-24 group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
-        <img className='h-14 w-14' src={appIcon} />
-
-        </div>
-        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black group-hover:text-white'>Application Mobile</p>
-        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>La vidéo d'entreprise est un moyen de communication  a la fois ludique , innovant et interactif.</p>
-    </Link>
-    <Link to="/service/ad" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
-    <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
-        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
-          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
-        </div>
-       </div>
-        <div className='w-24 group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
-            <FcAdvertising size={40} color="white"  />
-        </div>
-        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black  group-hover:text-white'>Publicité en ligne</p>
-        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>La vidéo d'entreprise est un moyen de communication  a la fois ludique , innovant et interactif.</p>
-    </Link>
-    <Link to="/service/print" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
-    <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
-        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
-          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
-        </div>
-       </div>
-        <div className='w-24 group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
-        <img className='h-14 w-14' src={printer} />
-
-        </div>
-        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black  group-hover:text-white'> Imprimerie</p>
-        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>La vidéo d'entreprise est un moyen de communication  a la fois ludique , innovant et interactif.</p>
-    </Link>
-    <Link to="/service/light" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
-    <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
-        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
-          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
-        </div>
-       </div>
-        <div className='w-24 group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
-        <img className='h-14 w-14' src={enseigne} />
-
-        </div>
-        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black  group-hover:text-white'>Enseignes Lumineuse </p>
-        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>La vidéo d'entreprise est un moyen de communication  a la fois ludique , innovant et interactif.</p>
-    </Link>
-    <Link to="/service/wear" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
-    <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
-        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
-          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
-        </div>
-       </div>
-        <div className='w-24 group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
-        <img className='h-14 w-14' src={garage} />
-
-        </div>
-        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black  group-hover:text-white'>revêtement de façade</p>
-        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>La vidéo d'entreprise est un moyen de communication  a la fois ludique , innovant et interactif.</p>
-    </Link>
-    <Link to="/service/building" className='h-64 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
-    <div className='h-80 w-80  group-hover:translate-y-[4rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
-        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
-          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
-        </div>
-       </div>
-        <div className='w-24 group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
-        <img className='h-14 w-14' src={metal} />
-
-        </div>
-        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black  group-hover:text-white'>construction métallique</p>
-        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>La vidéo d'entreprise est un moyen de communication  a la fois ludique , innovant et interactif.</p>
-    </Link>
-
-
-    </div>
-
-</div>
 {/* Work */}
 <div className='min-h-[40vh] flex-col flex'>
   <h1 className='text-center text-3xl font-semibold mt-5'>Quelques uns de nos travaux</h1>
   <div className='flex-1 pt-[4rem] items-center'>
   <Carousel
       withIndicators
-      height={330}
-      slideSize={ matches ? "100%" : "45%"}
+      height={540}
+      styles={{ control: { backgroundColor: 'black !important' ,color :"white" } }}
+      slideSize={ matches ? "100%" : "33%"}
       slideGap="md"
       loop
       align="start"
@@ -245,7 +99,7 @@ function HomeScreen() {
     >
       <Carousel.Slide>
         <div className='h-[30rem]  w-full'>
-          <img className='h-[30rem] w-full object-fill' src={CarouselImage1}/>
+          <img className='h-[30rem] w-full object-contain' src={CarouselImage1}/>
         </div>
       </Carousel.Slide>
       <Carousel.Slide>
@@ -303,6 +157,42 @@ function HomeScreen() {
           <img className='h-[30rem] w-full object-fill' src={CarouselImage12} />
         </div>
       </Carousel.Slide>
+      <Carousel.Slide>
+      <div className='h-[30rem]  w-full'>
+          <img className='h-[30rem] w-full object-fill' src={CarouselImage13} />
+        </div>
+      </Carousel.Slide>
+      <Carousel.Slide>
+      <div className='h-[30rem]  w-full'>
+          <img className='h-[30rem] w-full object-fill' src={CarouselImage14} />
+        </div>
+      </Carousel.Slide>
+      <Carousel.Slide>
+      <div className='h-[30rem]  w-full'>
+          <img className='h-[30rem] w-full object-fill' src={CarouselImage15} />
+        </div>
+      </Carousel.Slide>
+      <Carousel.Slide>
+      <div className='h-[30rem]  w-full'>
+          <img className='h-[30rem] w-full object-fill' src={CarouselImage16} />
+        </div>
+      </Carousel.Slide>
+      <Carousel.Slide>
+      <div className='h-[30rem]  w-full'>
+          <img className='h-[30rem] w-full object-fill' src={CarouselImage17} />
+        </div>
+      </Carousel.Slide>
+      <Carousel.Slide>
+      <div className='h-[30rem]  w-full'>
+          <img className='h-[30rem] w-full object-fill' src={CarouselImage18} />
+        </div>
+      </Carousel.Slide>
+      <Carousel.Slide>
+      <div className='h-[30rem]  w-full'>
+          <img className='h-[30rem] w-full object-fill' src={CarouselImage19} />
+        </div>
+      </Carousel.Slide>
+ 
     </Carousel>
   </div>
   <Link to="/realisation" className='bg-yellow-400 mt-5  cursor-pointer animate-bounce mr-3 rounded shadow-md mb-4 w-48 h-12 justify-center items-center flex self-end' >
@@ -311,6 +201,169 @@ function HomeScreen() {
 
 </Link>
 </div>
+
+
+{/* Nos Services */}
+<div className='min-h-screen  w-full relative flex flex-col ' >
+  <div className='absolute self-center mr-4 h-auto w-full bottom-0' >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FF8A73" fill-opacity="1" d="M0,32L60,48C120,64,240,96,360,101.3C480,107,600,85,720,101.3C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+  </div>
+    <div className='w-80 m-4' >
+    <div className='bg-[#F9BE7A] w-48 h-12 rounded flex items-center justify-center' >
+<p className='text-[#ad5135] font-bold text-lg mr-2'>Nos services</p>
+</div>
+<p className='text-gray-500 font-semibold mt-5'>Nous veillons à vous offrir le meilleur service en répondant à vos besoins et objectifs.</p>
+
+    </div>
+    
+    {/* Cards */}
+    <div className='flex p-2  flex-wrap justify-center ' >
+    <Link to="/service/print" className='h-68 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    <div className='h-80 w-80  group-hover:translate-y-[6rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
+        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
+          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
+        </div>
+       </div>
+        <div className='w-24 group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
+        <img className='h-14 w-14' src={printer} />
+
+        </div>
+        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black  group-hover:text-white'> Imprimerie</p>
+        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>Nous assurons tous vos besoins d'imprimer et de création sur tout support, vous permettant ainsi d'améliorer l'image de votre entreprise.</p>
+    </Link>
+    <Link to="/service/identity" className='h-68 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    <div className='h-80 w-80  group-hover:translate-y-[6rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
+        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
+          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
+        </div>
+       </div>
+        <div className='w-24 group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
+        <FcCameraIdentification size={40} color="white"  />
+        </div>
+        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black group-hover:text-white'>Identité visuelle</p>
+        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>Nous réalisions votre carte d'identité graphique, qui permet de reconnaître votre entreprise, sans même lire son nom.</p>
+    </Link>
+
+    <Link to="/service/light" className='h-68 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    <div className='h-80 w-80  group-hover:translate-y-[6rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
+        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
+          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
+        </div>
+       </div>
+        <div className='w-24 group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
+        <img className='h-14 w-14' src={enseigne} />
+
+        </div>
+        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black  group-hover:text-white'>Enseignes Lumineuse </p>
+        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>Il est certes bien d'avoir une enseigne, mais avoir une enseigne lumineuse est encore mieux, attractif et met la visibilité de votre entreprise loin devant celle de vos concurrents.</p>
+    </Link>
+    <Link to="/service/wear" className='h-68 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    <div className='h-80 w-80  group-hover:translate-y-[6rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
+        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
+          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
+        </div>
+       </div>
+        <div className='w-24 group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
+        <img className='h-14 w-14' src={garage} />
+
+        </div>
+        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black  group-hover:text-white'>revêtement de façade</p>
+        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>Modernisez la façade de votre bâtiment avec des designs spécials, adaptés et durable.  Elle détermine la première des choses que vos visiteurs voient avant de voir le contenu que vous proposez.</p>
+    </Link>
+    <Link to="/service/web" className='h-68 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    <div className='h-80 w-80  group-hover:translate-y-[6rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
+        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
+          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
+        </div>
+       </div>
+        <div className='w-24 group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
+        <img className='h-14 w-14' src={webIcon} />
+
+        </div>
+        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black group-hover:text-white'>Création de site web</p>
+        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>Vous cherchez une agence de creation  graphique pour votre communication visuelle</p>
+    </Link>
+    <Link to="/service/ecommerce" className='h-68 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    <div className='h-80 w-80  group-hover:translate-y-[6rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
+        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
+          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
+        </div>
+       </div>
+        <div className='w-24 group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
+        <img className='h-14 w-14' src={ecommerceIcon} />
+
+
+        </div>
+        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black group-hover:text-white'>Creation de sites E-commerce</p>
+        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>Offrir à vos clients une meilleure experience en ligne grace a votre solution e-commerce </p>
+    </Link>
+    <Link to="/service/app" className='h-68 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    <div className='h-80 w-80  group-hover:translate-y-[6rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
+        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
+          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
+        </div>
+       </div>
+        <div className='w-24 group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
+        <img className='h-14 w-14' src={appIcon} />
+
+        </div>
+        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black group-hover:text-white'>Application Mobile</p>
+        <p className='text-gray-400 font-semibold text-[0.9rem] mt-2 z-40 group-hover:text-white '>L'application mobile est un excellent moyen pour votre entreprise de se faire connaitre sur davantage de plateformes, et surtout simplifier la communication entreprise-clients.</p>
+    </Link>
+
+    <Link to="/service/ad" className='h-68 relative overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+    <div className='h-80 w-80  group-hover:translate-y-[6rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
+        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
+          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
+        </div>
+       </div>
+        <div className='w-24 group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
+            <FcAdvertising size={40} color="white"  />
+        </div>
+        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black  group-hover:text-white'>Publicité en ligne</p>
+        <p className='text-gray-400 font-semibold mt-2 z-40 text-[0.75rem] group-hover:text-white '>La publicité en ligne vous permet de toucher le maximum de personnes et d'avoir une meilleure connaissance de vos potentiels clients. Ce qui permet de leur proposer un message adapté qui à plus de chance de les impacter.</p>
+    </Link>
+    <Link to="/service/video" className='h-68 relative  overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+       {/* loobme */}
+       <div className='h-80 w-80  group-hover:translate-y-[6rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
+        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
+          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
+        </div>
+       </div>
+        <div className='w-24  group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
+
+          <img className='h-14 w-14' src={videoEditing} />
+        </div>
+        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black group-hover:text-white'>vidéo</p>
+        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>La vidéo d'entreprise est un moyen de communication  a la fois ludique , innovant et interactif.</p>
+    </Link>
+    <Link to="/service/building" className='h-68 relative  overflow-hidden rounded-lg cursor-pointer cardGradient z-30 group hover:shadow-xl w-[25rem] border m-4 p-5 flex flex-col border-gray-100 shadow-lg shadow-gray-200 drop-shadow-xl bg-white'>
+       {/* loobme */}
+       <div className='h-80 w-80  group-hover:translate-y-[6rem]  translate-y-[8rem]   group-hover:translate-x-[12.5rem] translate-x-[23rem] transition duration-[700ms] ease-in-out delay-[100ms]  bg-[white] bg-opacity-10  flex justify-center items-center   rounded-full  absolute '>
+        <div className='h-48 w-48 rounded-full  flex justify-center items-center  bg-[#FBC996]  '>
+          <div className='h-24 w-24 ml-5 rounded-full bg-[#f55f8d]'></div>
+        </div>
+       </div>
+        <div className='w-24  group-hover:bg-[#FA9099] bg-[#FEEFF3] h-24 flex items-center justify-center rounded-full shadow-sm' >
+
+          <img className='h-14 w-14' src={metal} />
+        </div>
+        <p className='text-xl capitalize font-bold ml-3 mt-1 text-black group-hover:text-white'>construction métallique</p>
+        <p className='text-gray-400 font-semibold mt-2 z-40 group-hover:text-white '>Confiez vos constructions métallique à des pro. Grâce à notre système de travail optimisé, nous vous livrons des travaux impecable dans des délais incroyablement court.</p>
+    </Link>
+  
+  
+   
+  
+   
+   
+   
+
+
+    </div>
+
+</div>
+
 {/* About */}
 <div className='min-h-[90vh] mt-12 sm:mt-0 flex flex-wrap  sm:grid sm:grid-cols-2' >
 <div class="w-full  flex items-center px-4">
@@ -329,7 +382,7 @@ function HomeScreen() {
 </svg>
           </div>
             <p className='font-semibold z-40'>
-            Nous sommes une équipe de passionnés du web, pleine de bonnes idées qui trouve son bonheur dans l’accompagnement de ses clients tout au long de leurs projets web. La créativité et le professionnalisme sont les fondements sur lesquels on se base pour livrer des sites internet à la hauteur de vos attentes et de vos objectifs. MediaZain a su évoluer au cours des années pour s’adapter au monde passionnant du digital, et garder la même énergie et motivation qu’au départ.
+            Nous sommes une équipe de passionnés du web, pleine de bonnes idées qui trouve son bonheur dans l’accompagnement de ses clients tout au long de leurs projets web. La créativité et le professionnalisme sont les fondements sur lesquels on se base pour livrer des sites internet à la hauteur de vos attentes et de vos objectifs. microtic a su évoluer au cours des années pour s’adapter au monde passionnant du digital, et garder la même énergie et motivation qu’au départ.
             </p>
         </div>
         <div className='bg-[#FF8A73] ml-3 shadow-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 shadow-[#FF8A73] border-2 drop-shadow-md border-[#FF8A73]  cursor-pointer w-12  h-12 rounded-full flex items-center justify-center' >

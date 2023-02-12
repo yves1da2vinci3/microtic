@@ -9,7 +9,7 @@ import Integration from '../../assets/Icon/illustrator.png'
 import InT from '../../assets/Icon/data-integration.png'
 import Img3 from '../../assets/Icon/famous.png'
 import accessibility from '../../assets/Icon/authorization.png'
-import Luminous1 from '../../assets/Images/Luminous1.jpg'
+import Luminous1 from '../../assets/Images/enseigne.jpeg'
 import Luminous2 from '../../assets/Images/Luminous2.jpg'
 
 import { Link } from 'react-router-dom'
@@ -31,7 +31,8 @@ function Light() {
       <div className='min-h-[60vh] md:grid md:grid-cols-2  ' >
         <div className=' flex gap-y-4 flex-col p-10 md:p-14'>
   <h1 className='text-left text-[#233653]  text-3xl font-bold mt-4' >Besoin d'enseigne Lumineuse?</h1>
-<p className='text-gray-400 text-lg' >Microtic est la pour vous ,ayant une plusieurs  fois mis en place d'un enseigne Lumineuse, nous serons de vous compter votre illustre personne parmi notre clientèle</p>
+<p className='text-gray-400 text-lg' >Panneau ou enseigne Lumineuse de tout type à plat ou en 3D, nous réalisons vos enseignes et panneaux. Multitude de finitions disponibles.
+Pose partout en Côte d'Ivoire</p>
 
 
         </div>
@@ -112,7 +113,7 @@ function Light() {
       </div>
       </div>
      
-      <section className="relative pt-28 pb-36 bg-gray-100 overflow-hidden">
+      {/* <section className="relative pt-28 pb-36 bg-gray-100 overflow-hidden">
   <img
     className="absolute top-0 left-1/2 transform -translate-x-1/2"
     src="https://shuffle.dev/gradia-assets/elements/testimonials/radial3.svg"
@@ -195,7 +196,7 @@ function Light() {
     </Carousel>
     </div>
   </div>
-</section>
+</section> */}
 {/* Client */}
 <Footer />
     </div>

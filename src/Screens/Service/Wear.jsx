@@ -4,8 +4,8 @@ import Drawer from '../../Layout/Drawer'
 import NavBar from '../../Layout/NavBar'
 
 import accessibility from '../../assets/Icon/authorization.png'
-import Fadding from '../../assets/Images/facing.jpg'
-import Building from '../../assets/Images/building.jpg'
+import Fadding from '../../assets/Images/facade1.jpeg'
+import Building from '../../assets/Images/facade2.jpeg'
 import Img3 from '../../assets/Icon/famous.png'
 
 import { Link } from 'react-router-dom'
@@ -26,8 +26,9 @@ function Wear() {
       {/* Descrption */}
       <div className='min-h-[60vh] md:grid md:grid-cols-2  ' >
         <div className=' flex gap-y-4 flex-col p-10 md:p-14'>
-  <h1 className='text-left text-[#233653]  text-3xl font-bold mt-4' >Obtenez le revêtement de façade idéal pour votre propriété grâce à MICROTIC</h1>
-<p className='text-gray-400 text-lg' >Obtenez un look architectural inspiré pour votre maison avec le revêtement de façade microtic. Nos produits sont faits pour durer avec une finition naturelle qui s'adapte à tous les styles.</p>
+  <h1 className='text-left text-[#233653]  text-3xl font-bold mt-4' >Vous désirez une façade sobre aux lignes pures ?</h1>
+<p className='text-gray-400 text-lg' > Dans ce cas, optez pour un revêtement en cassettes d'Alucobond (plaques composites en aluminium.
+Obtenez un look architectural avec le revêtement de façade qui garde son éclat sur plusieurs années malgré les intempéries.</p>
 
 
         </div>
@@ -108,13 +109,13 @@ function Wear() {
       </div>
       </div>
      
-      <section className="relative pt-28 pb-36 bg-gray-100 overflow-hidden">
-  <img
+      {/* <section className="relative pt-28 pb-36 bg-gray-100 overflow-hidden">
+  {/* <img
     className="absolute top-0 left-1/2 transform -translate-x-1/2"
     src="https://shuffle.dev/gradia-assets/elements/testimonials/radial3.svg"
     alt=""
-  />
-  <div className="relative z-10 container mx-auto px-4">
+  /> */}
+  {/* <div className="relative z-10 container mx-auto px-4">
     <div className="max-w-4xl mx-auto">
       <h2 className="mb-16 max-w-3xl mx-auto font-heading font-semibold text-center text-3xl sm:text-4xl text-gray-900">
       Écoutez les témoignages d'utilisateurs de microtic qui ont économisé des milliers de francs CFA sur la création de sites Web.
@@ -190,8 +191,8 @@ function Wear() {
       </Carousel.Slide>
     </Carousel>
     </div>
-  </div>
-</section>
+  </div> */}
+{/* </section>  */}
 {/* Client */}
 <Footer />
     </div>
