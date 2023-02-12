@@ -77,7 +77,7 @@ function HomeScreen() {
       </div>
 
     </div>
-    <div className=' justify-center flex order-1 md:order-2 items-center ' >
+    <div className=' justify-center flex order-1 g md:order-2 items-center ' >
       <img src={HomeImg} className="object-cover" />
     </div>
     
