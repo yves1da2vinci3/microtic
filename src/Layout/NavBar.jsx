@@ -4,7 +4,7 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import { IoMdArrowDropdown } from 'react-icons/io'
 import { Link, useLocation } from 'react-router-dom'
 import { NavContext } from '../Context/NavContext'
-import microticLogo from '../assets/Images/logo.png'
+import microticLogo from '../assets/Images/microticlogo.png'
 function NavBar() {
     const {Toggle } = useContext(NavContext)
     const location = useLocation()
