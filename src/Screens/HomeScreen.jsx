@@ -1,6 +1,5 @@
 import { Image } from '@mantine/core'
 import React, { useContext } from 'react'
-import Logo from '../assets/Images/Logo.png'
 import  {IconMenu2} from '@tabler/icons'
 import { BsArrowRightCircleFill,BsArrowDownCircleFill, BsImageAlt, BsPlayBtn, BsFillPlayFill, BsFillArrowRightCircleFill} from "react-icons/bs"
 import { HiPlay } from "react-icons/hi"
