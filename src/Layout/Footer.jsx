@@ -134,7 +134,7 @@ function Footer() {
                   className="font-heading font-medium text-base text-gray-900 hover:text-gray-700"
                   href="#"
                 >
-                  microtic@gmail.com
+                  microtic.ci@gmail.com
                 </a>
               </li>
               
@@ -143,7 +143,7 @@ function Footer() {
                   className="font-heading font-medium text-base text-gray-900 hover:text-gray-700"
                   href="#"
                 >
-                  (+225) 0140117596
+                  +(225) 0153625618
                 </a>
               </li>
             </ul>

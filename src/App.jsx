@@ -17,10 +17,13 @@ import Print from './Screens/Service/Print';
 import Light from './Screens/Service/Light';
 import Wear from './Screens/Service/Wear';
 import Building from './Screens/Service/Building';
-
+import {ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
+<ToastContainer />
+
       <NavProvider>
 
       <Router>

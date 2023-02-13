@@ -105,7 +105,7 @@ function Drawer() {
     </Accordion>
          </li>
          <li className="mb-12">
-         <Link to="/references" >
+         <Link to="/reference" >
               <a
                 className="font-heading font-medium text-lg text-gray-900 hover:text-gray-700"
                 href="#"
