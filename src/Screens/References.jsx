@@ -50,9 +50,7 @@ function References() {
     <div className='w-56 m-4 h-48  rounded-lg drop-shadow-md flex justify-center items-center bg-white border border-gray-300'>
       <img className='h-36 w-36' src={gcb9} />
     </div>
-    <div className='w-56 m-4 h-48  rounded-lg drop-shadow-md flex justify-center items-center bg-white border border-gray-300'>
-      <img className='h-36 w-36' src={gcb} />
-    </div>
+  
   </div>
 
   
