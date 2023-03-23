@@ -529,16 +529,14 @@ function HomeScreen() {
     <div className='w-56 m-4 h-48  rounded-lg drop-shadow-md flex justify-center items-center bg-white'>
       <img className='h-36 w-36' src={gcb9} />
     </div>
-    <div className='w-56 m-4 h-48  rounded-lg drop-shadow-md flex justify-center items-center bg-white'>
-      <img className='h-36 w-36' src={gcb} />
-    </div>
+  
   </div>
 
-  <div className='bg-yellow-400 cursor-pointer animate-bounce rounded shadow-md mb-4 w-48 h-12 justify-center items-center flex self-end' >
+  <Link to="/reference" className='bg-yellow-400 cursor-pointer animate-bounce rounded shadow-md mb-4 w-48 h-12 justify-center items-center flex self-end' >
     <p className='text-yellow-800 font-bold text-lg mr-2'>Voir la suite</p>
     <BsFillArrowRightCircleFill size={15} color="#8C5610" />
 
-</div>
+</Link>
 </div>
 {/* Nos Technologies */}
 <div className='min-h-[80vh] bg-white flex flex-col p-4 '>
